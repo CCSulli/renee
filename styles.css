@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #f6f6f4;
     margin: 72px 20px 20px;
 }
@@ -49,6 +49,9 @@ header {
 
 #logo {
     font: 1.2rem 'Chau Philomene One', sans-serif;
+    font-family: "afronaut", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }   
 
 nav {
@@ -70,7 +73,7 @@ main {
     position: relative;
     margin: 72px 20px 20px;
     overflow: hidden;
-    height: 3600px;
+    height: 4800px;
 }
 
 #hero p {
@@ -105,7 +108,7 @@ main {
 
 #pic-2 img {
     max-width: 800px;
-    opacity: 90%;;
+    opacity: 76%;;
 }
 
 #pic-3 {
@@ -121,9 +124,9 @@ main {
 }
 
 #pic-4 {
-    z-index: 1000;
+    z-index: 200;
     /* top: 2540px; */
-    top: 70%;
+    top: 74%;
     right: 21%;
 }
 
