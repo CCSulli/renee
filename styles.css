@@ -9,9 +9,8 @@ a {
 }
 
 body {
-    /* min-height: 100vh; */
     background-color: #f6f6f4;
-    margin: 72px 20px 20px;
+    margin: 72px 20px 10px;
 }
 
 h1, ul {
@@ -27,11 +26,6 @@ li a {
 a:hover {
     text-decoration: underline;
 }
-
-/* em {
-    font-style: normal;
-    color: #000;
-} */
 
 header {
     position: fixed;
@@ -71,92 +65,97 @@ nav ul li {
 
 main {
     position: relative;
-    margin: 72px 20px 20px;
     overflow: hidden;
-    height: 4800px;
 }
 
-#hero p {
-    position: fixed;
-    font: 3rem 'Raleway', sans-serif;
+.container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.container p {
+    font: 2.5rem 'Raleway', sans-serif;
     color: transparent;
     -webkit-text-stroke: 1px #000;
-    width: 768px;
+}
+
+.text-left {
+    position: relative;
+    left: 100px;
     z-index: 500;
+    flex: 3
 }
 
-#pic-1, #pic-2, #pic-3, #pic-4 {
-    position: absolute;
+.text-right {
+    position: relative;
+    right: 120px;
+    z-index: 500;
+    flex: 3 
 }
 
-#pic-1 {
-    z-index: 100;
-    right: 2%;
+.text-last {
+    width: 45%;
 }
 
-#pic-1 img  {
-    max-width: 600px;
-    opacity: 90%;
+.img-container {
+    display: flex;
+    flex: 1.2;
 }
 
-#pic-2 {
-    z-index: 700;
-    /* top: 850px; */
-    top: 23%;
+.img-container img {
+    align-self: center;
+
+}
+
+.pic-0 {
+    width: 80%;
+    opacity: 70%;  
+}
+
+.pic-1 {
+    width: 80%;
+    opacity: 70%;  
+}
+
+.poop {
+    width: 100%;
+    align-self: center;
+}
+
+.pic-2 {
+    width: 60%;
+    position: relative;
+    right: 122%;
+    top: 60%;
+    opacity: 60%;
+}
+
+.pic-4 {
+    width: 60%;
+    position: relative;
     right: 20%;
+    top: 56%;
+    opacity: 70%;
 }
 
-#pic-2 img {
-    max-width: 800px;
-    opacity: 76%;;
-}
-
-#pic-3 {
-    z-index: 400;
-    /* top: 2000px; */
-    top: 52%;
-    right: 7%;
-}
-
-#pic-3 img {
-    opacity: 85%;
-    max-width: 700px;
-}
-
-#pic-4 {
-    z-index: 200;
-    /* top: 2540px; */
-    top: 74%;
-    right: 21%;
-}
-
-#pic-4 img {
-    opacity: 95%;
-    max-width: 700px;
-}
 
 img:hover {
    opacity: 1;
 }
 
-figure img {
-    width: 95%;
-}
-
 figcaption  {
     font: 1em Helvetica, sans-serif;
     letter-spacing: 2px;
-    color: #fff;
-    background-color: #67b7c3;
     width: fit-content;
     padding: 5px;
 }
 
-figcaption a {
+/* figcaption a {
     color: #fff;
-}
+} */
 
-footer p {
+footer {
+    margin-top: 30px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -167,7 +166,7 @@ footer p {
 
     main {
         margin: 0;
-        height: 3500px;
+        /* height: 3500px; */
     }
 
     #hero p {
@@ -175,9 +174,9 @@ footer p {
         margin-left: 30px;
     }
 
-    figure img {
+    /* figure img {
         width: 100%;
-    }
+    } */
 
     #pic-1 img {
         opacity: 40%;
