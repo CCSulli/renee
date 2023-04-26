@@ -42,7 +42,7 @@ header {
 }
 
 #logo {
-    font: 1.2rem 'Chau Philomene One', sans-serif;
+    font: 16px 'Chau Philomene One', sans-serif;
     font-family: "afronaut", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -60,7 +60,7 @@ nav ul {
     margin-top: 10px;
 }
 nav ul li {
-    font: 1.2rem 'Roboto', sans-serif;
+    font: 18px 'Roboto', sans-serif;
 }
 
 main {
@@ -70,27 +70,28 @@ main {
 
 .container {
     display: flex;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .container p {
-    font: 2.5rem 'Raleway', sans-serif;
+    font: 46px 'Raleway', sans-serif;
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
 
 .text-left {
     position: relative;
-    left: 100px;
+    left: 150px;
     z-index: 500;
-    flex: 3
+    flex: 4
 }
 
 .text-right {
     position: relative;
-    right: 120px;
+    right: 100px;
     z-index: 500;
-    flex: 3 
+    flex: 4 
 }
 
 .text-last {
@@ -99,7 +100,16 @@ main {
 
 .img-container {
     display: flex;
-    flex: 1.2;
+    flex: 3;
+    position: relative;
+}
+
+.img-left {
+    left: 100px;
+}
+
+.img-right {
+    right: 100px;
 }
 
 .img-container img {
@@ -107,119 +117,156 @@ main {
 
 }
 
-.pic-0 {
-    width: 80%;
+.fig-1 {
+    margin-top: 200px;
+    position: relative;
+    left: 150px;
     opacity: 70%;  
+    z-index: 500;
 }
-
 .pic-1 {
-    width: 80%;
-    opacity: 70%;  
-}
-
-.poop {
-    width: 100%;
-    align-self: center;
+    width: 90%;
 }
 
 .pic-2 {
-    width: 60%;
-    position: relative;
-    right: 122%;
-    top: 60%;
-    opacity: 60%;
+    width: 100%;
+    opacity: 80%;
 }
 
-.pic-4 {
-    width: 60%;
+.fig-3 {
     position: relative;
+    margin-top: 300px;
     right: 20%;
-    top: 56%;
+}
+
+.pic-3 {
+    width: 100%;
     opacity: 70%;
 }
 
 
-img:hover {
+figure:hover, img:hover {
    opacity: 1;
 }
 
-figcaption  {
-    font: 1em Helvetica, sans-serif;
-    letter-spacing: 2px;
-    width: fit-content;
-    padding: 5px;
+figure {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; */
 }
 
-/* figcaption a {
-    color: #fff;
-} */
+figcaption  {
+    font: 20px Helvetica, sans-serif;
+    letter-spacing: 2px;
+    /* width: fit-content; */
+    /* padding-right: 20px; */
+    /* text-align: right; */
+}
 
 footer {
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 940px) {
-    html {
-     font-size: 12px;
-    }
-
-    main {
-        margin: 0;
-        /* height: 3500px; */
-    }
-
-    #hero p {
-        width: 70%;
-        margin-left: 30px;
-    }
-
-    /* figure img {
-        width: 100%;
-    } */
-
-    #pic-1 img {
-        opacity: 40%;
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .container p {
+        font-size: 38px;
     }
 }
 
-@media (max-width: 600px) {
-    #hero p {
-        font: 22px 'Raleway', sans-serif; 
-        color: #000;
-        -webkit-text-stroke: 0;
-        z-index: 0;
-    }
-    #pic-1, #pic-2, #pic-3, #pic-4 {
+@media (min-width: 500px) and (max-width: 1200px) {
+
+    .text-left, .text-right {
         position: static;
-        margin-bottom: 50px;
     }
 
-    #pic-3 {
-        top: 48%;
+    .img-right {
+        position: static;
     }
 
-    figcaption  {
-        font: 1.2em Helvetica, sans-serif;
-        letter-spacing: 2px;
+    .img-left {
+        position: static;
     }
+
+    .img-container {
+        flex: auto;
+    }
+
+    #middle-container {
+        flex-direction: column-reverse;
+    }
+
+    .text-last {
+        width: 65%;
+    }
+
+    .fig-3 {
+        margin-top: 500px;
+    }
+  
 }
 
 @media (max-width: 500px) {
-    #hero p {
-        position: static;
-        margin-left: 0  ;
+    body {
+        margin-left: 0;
+        margin-right: 0;
     }
-    
-    main {
-        height: fit-content;
-    } 
+    #logo {
+        font-size: 12px;
+        min-width: 90px;
+    }
 
-    #pic-1 img, #pic-2 img, #pic-3 img, #pic-4 img {
-        opacity: 90%;
+    nav ul li {
+        font-size: 14px;
     }
-    
-   #pic-2 {
-        top: 25%;    } 
-    
+
+    .container {
+        margin-bottom: 0;
+    }
+
+    .container p {
+        font-size: 34px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 40px;
+    }
+
+    .img-container {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .text-left, .text-right {
+        position: static;
+        flex: auto;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    #middle-container {
+        flex-direction: column-reverse;
+    }
+
+    #middle-container .img-container {
+        justify-content: flex-start;
+    }
+
+    .fig-1, .fig-3 {
+        margin-top: 10px;
+    }
+
+    .img-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-left {
+        flex-direction: column;
+    }
+
+    .text-last {
+        width: 100%;
+    }
+
 }
