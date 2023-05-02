@@ -34,6 +34,9 @@ li a {
 
 a:hover {
   text-decoration: underline;
+  color: #5bbd5b;
+  transition: all 200ms ease-in;
+
 }
 
 /***************************************** Head Style */
@@ -103,7 +106,26 @@ main {
 .social {
   /* float: right; */
   margin-right: 30px;
+  flex: 2;
 }
+
+.social li {
+    padding-bottom: 10px;
+}
+
+.project-link a {
+    position: relative;
+    left: 0;
+    display: inline-flex;
+    border-bottom: 5px solid;
+  }
+  
+  .project-link a:hover {
+    border-color: #5bbd5b;
+    left: 10px;
+    padding-left: 20px;
+    transition: all 200ms ease-in;
+  }
 
 #profile-img img {
   width: 400px;
