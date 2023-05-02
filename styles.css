@@ -20,6 +20,7 @@ h1,
 ul {
   margin: 0px;
   transition: transform 0.3s;
+  list-style-type: none;
 }
 
 li a {
@@ -49,20 +50,10 @@ header {
   font-family: "afronaut", sans-serif;
 }
 
-.proj-link {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform:capitalize
-}
-
-.proj-link:hover {
-    transition: all .3s;
-    /* background-color:#b7d9b7; */
-}
-
 nav {
   flex-basis: 700px;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -78,10 +69,16 @@ nav ul li {
 }
 
 main {
-  /* position: relative;
-    overflow: hidden; */
   margin-top: 90px;
+  min-height: 700px;
 }
+
+.social {
+    float: right;
+    margin-right: 30px;
+
+}
+
 
 .container {
   display: flex;
@@ -94,6 +91,80 @@ main {
   font-size: 46px;
   color: transparent;
   -webkit-text-stroke: 1px #000;
+}
+
+/* Projects Pages */
+
+#proj-nav {
+    margin-top: 100px;
+  }
+  
+  #proj-nav ul {
+      flex: none;
+  }
+  
+  #proj-nav a {
+      color: gray;
+  }
+  
+  #current {
+    color: #5bbd5b !important;
+  }
+  
+  .proj-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 20px;
+    justify-content: space-around;
+    gap: 40px 40px;
+  }
+  
+  .proj-container p {
+    font-size: 30px;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    margin: 20px 0 20px;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .proj-imgs {
+    display: flex;
+    gap: 0 20px;
+    flex: 2;
+  }
+  
+  .proj-container img {
+    margin: 20px 0 20px;
+    align-self: center;
+  }
+  .cover {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 0% 86%;
+  }
+  
+  .full-size {
+    width: 100%;
+  }
+  
+  .item {
+    width: 300px;
+    /* max-width: 400px; */
+    flex-basis: 30%;
+    flex: 1;
+  }
+
+.proj-link {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform:capitalize
+}
+
+.proj-link:hover {
+    transition: all .3s;
+    /* background-color:#b7d9b7; */
 }
 
 .text-left {
@@ -115,19 +186,17 @@ main {
     margin-left: 100px;
 }
 
-.proj-btn {
-        
-       
-        /* box-shadow: 10px 10px black; */
+em {
+    color: rgb(171, 171, 171);
 }
 
 .proj-btn {
     height: 100px;
-    width: 300px;
+    width: 200px;
     margin-left: 89px;
     margin-top: 50px;
     border-radius: 0;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     background-color: #daffda;
     text-transform: uppercase;
@@ -204,13 +273,11 @@ figcaption {
 }
 
 footer {
-position: fixed;
-bottom: 0;
-  margin-top: 30px;
+  margin-top: 100px;
   font-family: "Roboto", sans-serif;
 }
 
-/* About/Index */
+/* Index */
 
 #profile-img {
   width: 400px;
@@ -226,63 +293,11 @@ bottom: 0;
 }
 /* Project Pages */
 
-#proj-nav {
-  margin-top: 100px;
-}
 
-#proj-nav ul {
-    flex: none;
-}
 
-#current {
-  color: #5bbd5b;
-  font-style: italic;
-}
 
-.proj-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0 20px;
-  justify-content: space-around;
-  gap: 40px 40px;
-}
 
-.proj-container p {
-  font-size: 30px;
-  color: transparent;
-  -webkit-text-stroke: 1px #000;
-  margin: 20px 0 20px;
-  flex: 1;
-  min-width: 300px;
-}
 
-.proj-imgs {
-  display: flex;
-  gap: 0 20px;
-  flex: 2;
-}
-
-.proj-container img {
-  margin: 20px 0 20px;
-  align-self: center;
-}
-.cover {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: 0% 86%;
-}
-
-.full-size {
-  width: 100%;
-}
-
-.item {
-  width: 300px;
-  /* max-width: 400px; */
-  flex-basis: 30%;
-  flex: 1;
-}
 
 /* Media Queries */
 
@@ -292,25 +307,33 @@ bottom: 0;
   }
 }
 
+
+
 @media (max-width: 1200px) {
-  /* Project Pages */
 
   .proj-container p {
     font-size: 28px;
     color: black;
     -webkit-text-stroke: 0;
   }
+
+  .container p {
+    font-size: 35px;
+  }
+
+  #profile-txt {
+    position: static;
+  }
 }
 
+
+
 @media (min-width: 500px) and (max-width: 1200px) {
-  /* About/Index */
 
   #profile-text {
     right: 200px;
     font-size: 36px;
   }
-
-  /* Project Pages */
 
   .text-left,
   .text-right {
@@ -342,11 +365,18 @@ bottom: 0;
   }
 }
 
+
+
 @media (max-width: 500px) {
   body {
     margin-left: 0;
     margin-right: 0;
   }
+
+  footer {
+    margin-left: 10px;
+  }
+
   #logo {
     font-size: 12px;
     min-width: 90px;
@@ -358,6 +388,7 @@ bottom: 0;
 
   .container {
     margin-bottom: 0;
+    flex: none
   }
 
   .container p {
@@ -408,7 +439,15 @@ bottom: 0;
     width: 100%;
   }
 
-  /* Project Pages */
+  #profile-txt {
+    position: static;
+    z-index: 500;
+    flex: 4;
+  }
+
+  .proj-btn {
+    margin-top: 0px;
+}
 
   .proj-container {
     gap: 0;
