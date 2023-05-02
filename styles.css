@@ -45,11 +45,19 @@ header {
   left: 1.5%;
 }
 
-#logo {
-  font: 16px "Chau Philomene One", sans-serif;
+#logo, .proj-link {
   font-family: "afronaut", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+}
+
+.proj-link {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform:capitalize
+}
+
+.proj-link:hover {
+    transition: all .3s;
+    /* background-color:#b7d9b7; */
 }
 
 nav {
@@ -103,7 +111,40 @@ main {
 }
 
 .text-last {
-  width: 45%;
+    flex-basis: 800px;
+    margin-left: 100px;
+}
+
+.proj-btn {
+        
+       
+        /* box-shadow: 10px 10px black; */
+}
+
+.proj-btn {
+    height: 100px;
+    width: 300px;
+    margin-left: 89px;
+    margin-top: 50px;
+    border-radius: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #daffda;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px black;
+}
+
+.proj-btn:hover {
+    transition: all .3s;
+    background-color: #b7d9b7;
+}
+
+.proj-btn:active {
+    transition: all .02s;
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px;
 }
 
 .img-container {
@@ -154,6 +195,7 @@ main {
 figure:hover,
 img:hover {
   opacity: 1;
+  transition: all s;
 }
 
 figcaption {
@@ -162,6 +204,8 @@ figcaption {
 }
 
 footer {
+position: fixed;
+bottom: 0;
   margin-top: 30px;
   font-family: "Roboto", sans-serif;
 }
@@ -191,7 +235,8 @@ footer {
 }
 
 #current {
-  color: #df3e23;
+  color: #5bbd5b;
+  font-style: italic;
 }
 
 .proj-container {
