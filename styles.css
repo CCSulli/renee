@@ -3,8 +3,8 @@
 html,
 body,
 figure,
-p, 
-h1, 
+p,
+h1,
 ul {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ a {
 
 body {
   background-color: #f6f6f4;
-  margin: 72px 20px 10px;
+  margin: 72px 10px 10px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -49,7 +49,7 @@ header {
   z-index: 10000;
   height: 60px;
   top: 0;
-  left: 1.5%;
+  /* left: 1.5%; */
 }
 
 #logo,
@@ -80,6 +80,8 @@ nav ul li {
 main {
   margin-top: 90px;
   min-height: 700px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
 }
 
 .container {
@@ -105,7 +107,7 @@ main {
 
 #profile-img img {
   width: 400px;
-  opacity: 70%;
+  opacity: 80%;
   align-self: baseline;
 }
 
@@ -136,124 +138,126 @@ main {
 }
 
 em {
-    color: rgb(171, 171, 171);
-  }
-  
-  .proj-btn {
-    height: 100px;
-    width: 200px;
-    margin-left: 89px;
-    margin-top: 50px;
-    border-radius: 0;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #daffda;
-    text-transform: uppercase;
-    font-weight: 600;
-    transform: translate(-3px, -3px);
-    box-shadow: 3px 3px black;
-  }
-  
-  .proj-btn:hover {
-    transition: all 0.3s;
-    background-color: #b7d9b7;
-  }
-  
-  .proj-btn:active {
-    transition: all 0.02s;
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px;
-  }
+  color: rgb(171, 171, 171);
+}
 
-  .text-last {
-    margin-left: 100px;
-  }
+.proj-btn {
+  height: 100px;
+  width: 200px;
+  margin-left: 89px;
+  margin-top: 50px;
+  border-radius: 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  background-color: #daffda;
+  text-transform: uppercase;
+  font-weight: 600;
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px black;
+}
 
-  .text-left {
-    position: relative;
-    left: 150px;
-    z-index: 500;
-    flex: 4;
-  }
-  
-  .text-right {
-    position: relative;
-    right: 100px;
-    z-index: 500;
-    flex: 4;
-  }
+.proj-btn:hover {
+  transition: all 0.3s;
+  background-color: #b7d9b7;
+}
 
-  .img-container {
-    display: flex;
-    flex: 3;
-    position: relative;
-  }
-  
-  .img-left {
-    left: 100px;
-  }
-  
-  .img-right {
-    right: 100px;
-  }
-  
-  .img-container img {
-    align-self: center;
-  }
-  
-  .fig-1 {
-    margin-top: 200px;
-    position: relative;
-    left: 150px;
-    opacity: 70%;
-    z-index: 500;
-  }
-  .pic-1 {
-    width: 90%;
-  }
-  
-  .pic-2 {
-    width: 100%;
-    opacity: 80%;
-  }
-  
-  .fig-3 {
-    position: relative;
-    margin-top: 300px;
-    right: 20%;
-  }
-  
-  .pic-3 {
-    width: 100%;
-    opacity: 70%;
-  }
-  
-  figure:hover,
-  img:hover {
-    opacity: 1;
-    transition: all s;
-  }
-  
-  figcaption {
-    font: 20px Helvetica, sans-serif;
-    letter-spacing: 2px;
-  }
+.proj-btn:active {
+  transition: all 0.02s;
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px;
+}
+
+.text-last {
+  margin-left: 100px;
+}
+
+.text-left {
+  position: relative;
+  left: 150px;
+  z-index: 500;
+  flex: 4;
+}
+
+.text-right {
+  position: relative;
+  right: 100px;
+  z-index: 500;
+  flex: 4;
+}
+
+.img-container {
+  display: flex;
+  flex: 3;
+  position: relative;
+}
+
+.img-left {
+  left: 100px;
+}
+
+.img-right {
+  right: 100px;
+}
+
+.img-container img {
+  align-self: center;
+}
+
+.fig-1 {
+  margin-top: 200px;
+  position: relative;
+  left: 150px;
+  opacity: 70%;
+  z-index: 500;
+}
+.pic-1 {
+  width: 90%;
+}
+
+.pic-2 {
+  width: 100%;
+  opacity: 80%;
+}
+
+.fig-3 {
+  position: relative;
+  margin-top: 300px;
+  right: 20%;
+}
+
+.pic-3 {
+  width: 100%;
+  opacity: 70%;
+}
+
+figure:hover,
+img:hover {
+  opacity: 1;
+  transition: all s;
+}
+
+figcaption {
+  font: 20px Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
 
 /***************************************** Project Sections */
 
 .proj-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0 20px;
-    justify-content: space-around;
-    gap: 40px 40px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 20px;
+  justify-content: space-around;
+  gap: 40px 40px;
+}
 
 .proj-container p {
   font-size: 30px;
   color: transparent;
   -webkit-text-stroke: 1px #000;
-  margin: 20px 0 20px;
+  /* margin: 20px 0 20px; */
+  padding: 20px;
   flex: 1;
   min-width: 300px;
 }
@@ -264,6 +268,10 @@ em {
   flex: 2;
 }
 
+/* .wrap {
+    flex-wrap: wrap;
+} */
+
 .proj-container img {
   margin: 20px 0 20px;
   align-self: center;
@@ -273,7 +281,7 @@ em {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  object-position: 0% 86%;
+  object-position: 0% center;
 }
 
 .full-size {
@@ -317,7 +325,6 @@ footer {
 
 /****************************************** < 1200px */
 
-
 @media (max-width: 1200px) {
   .proj-container p {
     font-size: 28px;
@@ -333,25 +340,25 @@ footer {
 /****************************************** < 900px */
 
 @media (max-width: 900px) {
-    #profile-txt {
-        position: static;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-      }
+  #profile-txt {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
 
-      #profile-img {
-        margin-right: 20px;
-      }
+  #profile-img {
+    margin-right: 20px;
+  }
 
-      #profile-img img {
-        opacity: 100%;
-      }
+  #profile-img img {
+    opacity: 100%;
+  }
 
-      .social {
-        font-size: 20px;
-        margin-top: 20px;
-      }
+  .social {
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 
 /****************************************** 500px to 1200px */
@@ -394,13 +401,6 @@ footer {
 /***************************************** < 500px */
 
 @media (max-width: 500px) {
-
-
-  body {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   footer {
     margin-left: 10px;
   }
@@ -422,8 +422,8 @@ footer {
 
   .container p {
     font-size: 34px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
     margin-top: 40px;
   }
 
@@ -446,6 +446,15 @@ footer {
     position: static;
     z-index: 500;
     flex: 4;
+    min-width: unset;
+  }
+
+  #profile-img {
+    margin-right: 0;
+  }
+
+  #profile-img img {
+    width: 100%;
   }
 
   #middle-container {
@@ -492,7 +501,7 @@ footer {
     font-size: 28px;
     color: transparent;
     -webkit-text-stroke: 1px black;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
   }
 
   .proj-imgs {
@@ -501,11 +510,10 @@ footer {
 
   .cover {
     height: 240px;
-    object-position: 70% 86%;
+    object-position: 70% center;
   }
 
   .social {
     margin-left: 10px;
   }
 }
-
