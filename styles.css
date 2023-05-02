@@ -1,13 +1,18 @@
+/***************************************** General Styles */
+
 html,
 body,
-figure {
+figure,
+p, 
+h1, 
+ul {
   margin: 0;
   padding: 0;
 }
 
 a {
   color: #000;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 body {
@@ -18,7 +23,6 @@ body {
 
 h1,
 ul {
-  margin: 0px;
   transition: transform 0.3s;
   list-style-type: none;
 }
@@ -31,6 +35,8 @@ li a {
 a:hover {
   text-decoration: underline;
 }
+
+/***************************************** Head Style */
 
 header {
   position: fixed;
@@ -46,7 +52,8 @@ header {
   left: 1.5%;
 }
 
-#logo, .proj-link {
+#logo,
+.proj-link {
   font-family: "afronaut", sans-serif;
 }
 
@@ -68,17 +75,12 @@ nav ul li {
   font: 18px "Roboto", sans-serif;
 }
 
+/* Body Style */
+
 main {
   margin-top: 90px;
   min-height: 700px;
 }
-
-.social {
-    float: right;
-    margin-right: 30px;
-
-}
-
 
 .container {
   display: flex;
@@ -91,106 +93,53 @@ main {
   font-size: 46px;
   color: transparent;
   -webkit-text-stroke: 1px #000;
+  margin-bottom: 50px;
 }
 
-/* Projects Pages */
+/***************************************** Index */
+
+.social {
+  /* float: right; */
+  margin-right: 30px;
+}
+
+#profile-img img {
+  width: 400px;
+  opacity: 70%;
+  align-self: baseline;
+}
+
+#profile-txt {
+  right: 50px;
+  position: relative;
+  z-index: 500;
+  flex: 4;
+  min-width: 400px;
+}
+
+/***************************************** Projects Main */
 
 #proj-nav {
-    margin-top: 100px;
-  }
-  
-  #proj-nav ul {
-      flex: none;
-  }
-  
-  #proj-nav a {
-      color: gray;
-  }
-  
-  #current {
-    color: #5bbd5b !important;
-  }
-  
-  .proj-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0 20px;
-    justify-content: space-around;
-    gap: 40px 40px;
-  }
-  
-  .proj-container p {
-    font-size: 30px;
-    color: transparent;
-    -webkit-text-stroke: 1px #000;
-    margin: 20px 0 20px;
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .proj-imgs {
-    display: flex;
-    gap: 0 20px;
-    flex: 2;
-  }
-  
-  .proj-container img {
-    margin: 20px 0 20px;
-    align-self: center;
-  }
-  .cover {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: 0% 86%;
-  }
-  
-  .full-size {
-    width: 100%;
-  }
-  
-  .item {
-    width: 300px;
-    /* max-width: 400px; */
-    flex-basis: 30%;
-    flex: 1;
-  }
-
-.proj-link {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform:capitalize
+  margin-top: 100px;
 }
 
-.proj-link:hover {
-    transition: all .3s;
-    /* background-color:#b7d9b7; */
+#proj-nav ul {
+  flex: none;
 }
 
-.text-left {
-  position: relative;
-  left: 150px;
-  z-index: 500;
-  flex: 4;
+#proj-nav a {
+  color: gray;
 }
 
-.text-right {
-  position: relative;
-  right: 100px;
-  z-index: 500;
-  flex: 4;
-}
-
-.text-last {
-    flex-basis: 800px;
-    margin-left: 100px;
+#current {
+  color: #5bbd5b !important;
 }
 
 em {
     color: rgb(171, 171, 171);
-}
-
-.proj-btn {
+  }
+  
+  .proj-btn {
     height: 100px;
     width: 200px;
     margin-left: 89px;
@@ -203,103 +152,162 @@ em {
     font-weight: 600;
     transform: translate(-3px, -3px);
     box-shadow: 3px 3px black;
-}
-
-.proj-btn:hover {
-    transition: all .3s;
+  }
+  
+  .proj-btn:hover {
+    transition: all 0.3s;
     background-color: #b7d9b7;
-}
-
-.proj-btn:active {
-    transition: all .02s;
+  }
+  
+  .proj-btn:active {
+    transition: all 0.02s;
     transform: translate(1px, 1px);
     box-shadow: 1px 1px;
+  }
+
+  .text-last {
+    margin-left: 100px;
+  }
+
+  .text-left {
+    position: relative;
+    left: 150px;
+    z-index: 500;
+    flex: 4;
+  }
+  
+  .text-right {
+    position: relative;
+    right: 100px;
+    z-index: 500;
+    flex: 4;
+  }
+
+  .img-container {
+    display: flex;
+    flex: 3;
+    position: relative;
+  }
+  
+  .img-left {
+    left: 100px;
+  }
+  
+  .img-right {
+    right: 100px;
+  }
+  
+  .img-container img {
+    align-self: center;
+  }
+  
+  .fig-1 {
+    margin-top: 200px;
+    position: relative;
+    left: 150px;
+    opacity: 70%;
+    z-index: 500;
+  }
+  .pic-1 {
+    width: 90%;
+  }
+  
+  .pic-2 {
+    width: 100%;
+    opacity: 80%;
+  }
+  
+  .fig-3 {
+    position: relative;
+    margin-top: 300px;
+    right: 20%;
+  }
+  
+  .pic-3 {
+    width: 100%;
+    opacity: 70%;
+  }
+  
+  figure:hover,
+  img:hover {
+    opacity: 1;
+    transition: all s;
+  }
+  
+  figcaption {
+    font: 20px Helvetica, sans-serif;
+    letter-spacing: 2px;
+  }
+
+/***************************************** Project Sections */
+
+.proj-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 20px;
+    justify-content: space-around;
+    gap: 40px 40px;
+  }
+
+.proj-container p {
+  font-size: 30px;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  margin: 20px 0 20px;
+  flex: 1;
+  min-width: 300px;
 }
 
-.img-container {
+.proj-imgs {
   display: flex;
-  flex: 3;
-  position: relative;
+  gap: 0 20px;
+  flex: 2;
 }
 
-.img-left {
-  left: 100px;
-}
-
-.img-right {
-  right: 100px;
-}
-
-.img-container img {
+.proj-container img {
+  margin: 20px 0 20px;
   align-self: center;
 }
 
-.fig-1 {
-  margin-top: 200px;
-  position: relative;
-  left: 150px;
-  opacity: 70%;
-  z-index: 500;
-}
-.pic-1 {
-  width: 90%;
-}
-
-.pic-2 {
+.cover {
   width: 100%;
-  opacity: 80%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0% 86%;
 }
 
-.fig-3 {
-  position: relative;
-  margin-top: 300px;
-  right: 20%;
-}
-
-.pic-3 {
+.full-size {
   width: 100%;
-  opacity: 70%;
 }
 
-figure:hover,
-img:hover {
-  opacity: 1;
-  transition: all s;
+.item {
+  width: 300px;
+  /* max-width: 400px; */
+  flex-basis: 30%;
+  flex: 1;
 }
 
-figcaption {
-  font: 20px Helvetica, sans-serif;
-  letter-spacing: 2px;
+.proj-link {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
+
+.proj-link:hover {
+  transition: all 0.3s;
+  /* background-color:#b7d9b7; */
+}
+
+/***************************************** Footer */
 
 footer {
   margin-top: 100px;
   font-family: "Roboto", sans-serif;
 }
 
-/* Index */
+/***************************************** Media Queries */
 
-#profile-img {
-  width: 400px;
-  opacity: 70%;
-  align-self: baseline;
-}
-
-#profile-txt {
-  right: 200px;
-  position: relative;
-  z-index: 500;
-  flex: 4;
-}
-/* Project Pages */
-
-
-
-
-
-
-
-/* Media Queries */
+/****************************************** 1200px to 1400px */
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .container p {
@@ -307,10 +315,10 @@ footer {
   }
 }
 
+/****************************************** < 1200px */
 
 
 @media (max-width: 1200px) {
-
   .proj-container p {
     font-size: 28px;
     color: black;
@@ -320,19 +328,37 @@ footer {
   .container p {
     font-size: 35px;
   }
-
-  #profile-txt {
-    position: static;
-  }
 }
 
+/****************************************** < 900px */
 
+@media (max-width: 900px) {
+    #profile-txt {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+
+      #profile-img {
+        margin-right: 20px;
+      }
+
+      #profile-img img {
+        opacity: 100%;
+      }
+
+      .social {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+}
+
+/****************************************** 500px to 1200px */
 
 @media (min-width: 500px) and (max-width: 1200px) {
-
-  #profile-text {
-    right: 200px;
-    font-size: 36px;
+  #profile-txt {
+    font-size: 30px;
   }
 
   .text-left,
@@ -365,9 +391,11 @@ footer {
   }
 }
 
-
+/***************************************** < 500px */
 
 @media (max-width: 500px) {
+
+
   body {
     margin-left: 0;
     margin-right: 0;
@@ -388,7 +416,8 @@ footer {
 
   .container {
     margin-bottom: 0;
-    flex: none
+    flex-direction: column;
+    /* align-items: center; */
   }
 
   .container p {
@@ -413,6 +442,12 @@ footer {
     text-align: right;
   }
 
+  #profile-txt {
+    position: static;
+    z-index: 500;
+    flex: 4;
+  }
+
   #middle-container {
     flex-direction: column-reverse;
   }
@@ -424,6 +459,12 @@ footer {
   .fig-1,
   .fig-3 {
     margin-top: 10px;
+    opacity: 100%;
+  }
+
+  .pic-1,
+  .pic-2,
+  .pic-3 {
     opacity: 100%;
   }
 
@@ -439,15 +480,9 @@ footer {
     width: 100%;
   }
 
-  #profile-txt {
-    position: static;
-    z-index: 500;
-    flex: 4;
-  }
-
   .proj-btn {
     margin-top: 0px;
-}
+  }
 
   .proj-container {
     gap: 0;
@@ -468,4 +503,9 @@ footer {
     height: 240px;
     object-position: 70% 86%;
   }
+
+  .social {
+    margin-left: 10px;
+  }
 }
+
